@@ -1,38 +1,17 @@
-# create-svelte
+# SvelteKit + PocketBase CSR Auth Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a very simple template for SvelteKit and PocketBase that only does client side authentication (CSR/SPA). This is based on [Gani Georgiev's recommendation](https://github.com/pocketbase/pocketbase/discussions/3574#discussioncomment-7345956) which makes sense to me.
 
-## Creating a project
+I couldn't find many PocketBase/SvelteKit CSR examples on Github and the ones I did find, seemed more complicated than necessary. I'm trying to keep this one as simple as possible so that beginners (eg. me!) can easily understand how it works.
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Routes inside of /app are CSR only and authenticated.
+- Other routes have both CSR and SSR enabled. Intention is these will either be static or use a shared PocketBase account to retrieve public data.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Improvements and suggestions welcome.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## How to Use
 
-## Developing
+Requires a working PocketBase installation with at least one user in the `users` table.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Copy `.env.example` to `.env`
+- Configure `PUBLIC_POCKETBASE_URL` 
