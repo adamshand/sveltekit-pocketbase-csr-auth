@@ -16,11 +16,6 @@
 		<link href={openmojiBaseUrl + '1F534.svg'} rel="icon" />
 	{:else}
 		<link href={openmojiBaseUrl + '1F342.svg'} rel="icon" />
-		<script
-			data-website-id="c4085596-70aa-4e34-b971-f5a0a5145d04"
-			defer
-			src="https://umami.haume.nz/script.js"
-		></script>
 	{/if}
 </svelte:head>
 
