@@ -15,3 +15,7 @@ Requires a working PocketBase installation with at least one user in the `users`
 
 - Copy `.env.example` to `.env`
 - Configure `PUBLIC_POCKETBASE_URL` 
+
+## Questions
+
+- I'm not sure if using a `+layout.ts` for protecting the `/app` route is good enough.  With SSR I've used `+hooks.server.ts` but I don't believe you can do the same thing with `+hooks.client.ts`.
