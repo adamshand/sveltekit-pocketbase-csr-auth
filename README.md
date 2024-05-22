@@ -14,7 +14,9 @@ Improvements and suggestions welcome.
 Requires a working PocketBase installation with at least one user in the `users` table.
 
 - Copy `.env.example` to `.env`
-- Configure `PUBLIC_POCKETBASE_URL` 
+- Configure `PUBLIC_POCKETBASE_URL`
+- `pnpm i`
+- `pnpm dev`
 
 ## Questions
 
